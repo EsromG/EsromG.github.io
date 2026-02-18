@@ -1,429 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esrom Ghebreweldi - Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="terminal-cursor">$</span> esrom
-            </a>
-            <div class="nav-links">
-                <a href="#about">_about</a>
-                <a href="#work">_work</a>
-                <a href="#skills">_skills</a>
-                <a href="#contact">_contact</a>
-                <a href="https://github.com/Esrom-Tes/" target="_blank" class="nav-github">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-            </div>
-            <button class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esrom Ghebreweldi — AI & Enterprise Software Engineer</title>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for full-time roles • Dec 2025
-            </div>
-            <h1 class="hero-title">
-                Building intelligent<br>
-                <span class="gradient-text">applications</span> that matter.
-            </h1>
-            <p class="hero-subtitle">
-                Software engineer specializing in AI/ML, enterprise applications, and full-stack development.
-                Currently finishing my Master's at SDSU while working at First Bank & Trust.
-            </p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Get in touch</a>
-                <a href="#work" class="btn btn-secondary">View work</a>
-            </div>
-            
-            <!-- Code Preview -->
-            <div class="code-preview">
-                <div class="code-header">
-                    <div class="code-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <span class="code-title">profile.py</span>
-                </div>
-                <div class="code-content">
-                    <pre><code><span class="code-keyword">class</span> <span class="code-class">SoftwareEngineer</span>:
+  <!-- Fonts (I will change later ) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#top" class="nav-logo">
+        <span class="terminal-cursor">$</span> esrom
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">_about</a>
+        <a href="#experience">_experience</a>
+        <a href="#work">_work</a>
+        <a href="#skills">_skills</a>
+        <a href="#contact">_contact</a>
+
+        <a href="https://github.com/EsromG/" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="top" class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Open to full-time roles • 2026
+      </div>
+
+      <h1 class="hero-title">
+        Applied AI & Enterprise<br />
+        <span class="gradient-text">Software Engineer</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        I design and deliver end-to-end systems—AI-driven document pipelines, enterprise automation,
+        and full-stack applications—across banking, research, and product environments.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#work" class="btn btn-secondary">View work</a>
+
+        <!-- TODO: I Will put my PDF in repo root and name it 
+     <a href="Esrom_Ghebreweldi_Resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+          Download resume
+        </a>-->
+      </div>
+
+      <!-- Metrics strip (resume-aligned) -->
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-number">7</div>
+          <div class="metric-label">Enterprise apps delivered</div>
+        </div>
+        <div class="metric">
+          <div class="metric-number">200+</div>
+          <div class="metric-label">Support tickets resolved</div>
+        </div>
+        <div class="metric">
+          <div class="metric-number">99%</div>
+          <div class="metric-label">SLA compliance</div>
+        </div>
+        <div class="metric">
+          <div class="metric-number">84.5%</div>
+          <div class="metric-label">PII recall (real data)</div>
+        </div>
+      </div>
+
+      <!-- Code Preview -->
+      <div class="code-preview">
+        <div class="code-header">
+          <div class="code-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="code-title">profile.py</span>
+        </div>
+
+        <div class="code-content">
+<pre><code><span class="code-keyword">class</span> <span class="code-class">Engineer</span>:
     <span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-keyword">self</span>):
         <span class="code-keyword">self</span>.name = <span class="code-string">"Esrom Ghebreweldi"</span>
-        <span class="code-keyword">self</span>.role = <span class="code-string">"Software Engineer"</span>
-        <span class="code-keyword">self</span>.location = <span class="code-string">"Open to relocation"</span>
-        <span class="code-keyword">self</span>.experience = <span class="code-number">5</span>
-        
-    <span class="code-keyword">def</span> <span class="code-function">skills</span>(<span class="code-keyword">self</span>):
-        <span class="code-keyword">return</span> {
-            <span class="code-string">"languages"</span>: [<span class="code-string">"Python"</span>, <span class="code-string">"Java"</span>, <span class="code-string">"C#"</span>, <span class="code-string">"Dart"</span>],
-            <span class="code-string">"ai_ml"</span>: [<span class="code-string">"LLMs"</span>, <span class="code-string">"NLP"</span>, <span class="code-string">"PyTorch"</span>],
-            <span class="code-string">"enterprise"</span>: [<span class="code-string">"SharePoint"</span>, <span class="code-string">"PowerApps"</span>]
-        }</code></pre>
-                </div>
-            </div>
+        <span class="code-keyword">self</span>.title = <span class="code-string">"AI & Enterprise Software Engineer"</span>
+        <span class="code-keyword">self</span>.location = <span class="code-string">"Brookings, SD | Open To Relocation "</span>
+        <span class="code-keyword">self</span>.experience_years = <span class="code-number">5</span>
+        <span class="code-keyword">self</span>.domain = <span class="code-string">"Fintech + Applied AI"</span>
+
+    <span class="code-keyword">def</span> <span class="code-function">core_strengths</span>(<span class="code-keyword">self</span>):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Enterprise automation (Power Apps, Dataverse, SharePoint)"</span>,
+            <span class="code-string">"AI pipelines (NER, OCR, LLM/RAG)"</span>,
+            <span class="code-string">"Secure access + governance (Graph API, AvePoint)"</span>,
+            <span class="code-string">"Full-stack delivery + documentation"</span>
+        ]</code></pre>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-label">_about_me</div>
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">Software engineer with a focus on AI and enterprise solutions.</h2>
-                    <p>
-                        With 5 years of experience, I build data-driven applications and enterprise systems 
-                        that solve real-world problems. From AI-powered PDF redaction systems to cross-platform 
-                        mobile apps, I work across the full stack.
-                    </p>
-                    <p>
-                        Currently pursuing my Master's in Computer Science at South Dakota State University 
-                        (GPA 3.90), while working as a Software/Power Platform Developer at First Bank & Trust.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">5+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">200+</div>
-                            <div class="stat-label">Tickets Resolved</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">99%</div>
-                            <div class="stat-label">SLA Compliance</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="terminal-window">
-                        <div class="terminal-header">
-                            <div class="terminal-buttons">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <span class="terminal-title">terminal</span>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="terminal-line">
-                                <span class="prompt">esrom@portfolio:~$</span> cat current-role.txt
-                            </div>
-                            <div class="terminal-output">
-                                <div>📍 Location: Brookings, SD | Open to relocation</div>
-                                <div>🎓 Education: MS Computer Science</div>
-                                <div>💼 Current: Software/Power platform Developer</div>
-                                <div>📅 Graduating: December 2025</div>
-                                <div>✨ Open to: Full-time roles</div>
-                            </div>
-                            <div class="terminal-line">
-                                <span class="prompt">esrom@portfolio:~$</span> <span class="cursor">█</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label">_about_me</div>
+
+      <div class="about-grid">
+        <div class="about-content">
+          <h2 class="section-title">I build production-ready systems at the intersection of AI and enterprise software.</h2>
+
+          <p>
+            With 5 years of experience, I engineer data-driven applications and enterprise platforms that automate
+            workflows, strengthen governance, and deliver measurable operational impact. My work spans fintech
+            environments, applied NLP document pipelines, and cross-platform product development.
+          </p>
+
+          <p>
+            I’m completing an M.S. in Computer Science at South Dakota State University (GPA 3.90),
+            and I currently work at First Bank & Trust as a Software & Power Platform Developer (Intern).
+          </p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Staff trained</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="work">
-        <div class="container">
-            <div class="section-label">_featured_projects</div>
-            <h2 class="section-title-large">Building solutions with<br><span class="gradient-text">modern tech stacks</span></h2>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">AI/ML</span>
-                        <span class="project-year">2024</span>
-                    </div>
-                    <h3 class="project-title">AI-Driven PDF PII Redaction System</h3>
-                    <p class="project-description">
-                        Built an NLP pipeline using transformer-based Named Entity Recognition, OCR, and layout 
-                        analysis to detect and redact sensitive information in PDFs with high precision.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Transformers</span>
-                        <span>NLP</span>
-                        <span>OCR</span>
-                    </div>
-                    <a href="#" class="project-link">
-                        <span>View project</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Mobile</span>
-                        <span class="project-year">2021-2023</span>
-                    </div>
-                    <h3 class="project-title">Cross-Platform Video Streaming App</h3>
-                    <p class="project-description">
-                        Developed and maintained a comprehensive Flutter application deployed across Android, 
-                        iOS, desktop, and smart TV platforms. Led a team of 6 interns.
-                    </p>
-                    <div class="project-tech">
-                        <span>Flutter</span>
-                        <span>Dart</span>
-                        <span>Mobile</span>
-                        <span>Leadership</span>
-                    </div>
-                    <a href="#" class="project-link">
-                        <span>View project</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Enterprise</span>
-                        <span class="project-year">2024</span>
-                    </div>
-                    <h3 class="project-title">Biometric Identification System</h3>
-                    <p class="project-description">
-                        Developed an integrated C# and SQL Server software with fingerprint registration, 
-                        secure identification, and comprehensive reporting functionality.
-                    </p>
-                    <div class="project-tech">
-                        <span>C#</span>
-                        <span>SQL Server</span>
-                        <span>Biometrics</span>
-                        <span>Security</span>
-                    </div>
-                    <a href="#" class="project-link">
-                        <span>View project</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-tag">Open Source</span>
-                        <span class="project-year">2024</span>
-                    </div>
-                    <h3 class="project-title">Localized Python Error Messages</h3>
-                    <p class="project-description">
-                        Designed a localization framework using gettext to translate Python error messages 
-                        into Tigrinya and Persian, improving accessibility for non-English speakers.
-                    </p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>i18n</span>
-                        <span>Accessibility</span>
-                        <span>Open Source</span>
-                    </div>
-                    <a href="#" class="project-link">
-                        <span>View project</span>
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="stat">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">PII categories redacted</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-label">_tech_stack</div>
-            <h2 class="section-title-large">Technologies I work with</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">C#</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Dart/Flutter</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">AI & ML</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Machine Learning</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Large Language Models</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">NLP & RAG</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 82%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PyTorch</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 87%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Enterprise</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">SharePoint</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PowerApps</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Power Automate</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">SQL Server</span>
-                            <div class="skill-bar">
-                                <div class="skill-fill" style="--skill-width: 88%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat">
+              <div class="stat-number">29</div>
+              <div class="stat-label">OCR categories recognized</div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="section-label">_get_in_touch</div>
-                <h2 class="section-title-large">Let's build something<br><span class="gradient-text">together</span></h2>
-                <p class="contact-text">
-                    I'm actively seeking full-time opportunities starting December 2025. 
-                    If you're looking for a software engineer who can tackle AI/ML challenges 
-                    and build scalable enterprise applications, let's talk.
-                </p>
-                
-                <div class="contact-grid">
-                    <a href="mailto:Esrom.Ghebreweldi@gmail.com" class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <path d="M22 6l-10 7L2 6"/>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-label">Email</div>
-                            <div class="contact-value">Esrom.Ghebreweldi@gmail.com</div>
-                        </div>
-                    </a>
-
-                
-
-                    <a href="https://linkedin.com/in/esrom-tesfabrhan" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-label">LinkedIn</div>
-                            <div class="contact-value">esrom-tesfabrhan</div>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/Esrom-Tes/" target="_blank" class="contact-card">
-                        <div class="contact-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <div class="contact-label">GitHub</div>
-                            <div class="contact-value">esrom-ghebreweldi</div>
-                        </div>
-                    </a>
-                </div>
+        <div class="about-image">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="terminal-title">terminal</span>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <span class="terminal-cursor">$</span> esrom.ghebreweldi
-                </div>
-                <div class="footer-right">
-                    <span>© 2026 Built with modern web tech</span>
-                </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">esrom@portfolio:~$</span> cat focus.txt
+              </div>
+              <div class="terminal-output">
+                <div>🧠 AI: LLMs, RAG, NLP, NER, OCR, VLM datasets</div>
+                <div>🏢 Enterprise: SharePoint, Power Apps, Dataverse, Graph API</div>
+                <div>☁️ Cloud/DevOps: Azure, Docker, GitHub</div>
+                <div>📌 Target: Software Engineer / AI Engineer roles</div>
+              </div>
+              <div class="terminal-line">
+                <span class="prompt">esrom@portfolio:~$</span> <span class="cursor">█</span>
+              </div>
             </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-label">_experience</div>
+      <h2 class="section-title-large">Real-world experience in<br /><span class="gradient-text">fintech + applied AI</span></h2>
+
+      <div class="experience-list">
+        <!-- First Bank & Trust -->
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-title">Software & Power Platform Developer (Intern)</h3>
+              <div class="experience-meta">First Bank & Trust • Brookings, SD</div>
+            </div>
+            <div class="experience-dates">May 2025 — Present</div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Engineered <strong>7</strong> end-to-end enterprise apps using <strong>Power Apps + Dataverse</strong> to digitize manual workflows.</li>
+            <li>Built a <strong>Power BI governance dashboard</strong> leveraging <strong>Microsoft Graph APIs</strong> to identify stale Teams resources and reduce security risk.</li>
+            <li>Resolved <strong>200+</strong> SharePoint/Power Platform tickets while maintaining <strong>99% SLA compliance</strong>.</li>
+            <li>Provisioned secure SharePoint access using <strong>AvePoint</strong>, aligning permissions with organizational policy.</li>
+            <li>Delivered technical training sessions to <strong>50+</strong> IT staff on AI tools and automation strategies.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Power Apps</span><span>Dataverse</span><span>SharePoint</span><span>Power Automate</span><span>Power BI</span><span>Microsoft Graph</span><span>AvePoint</span>
+          </div>
+        </article>
+
+        <!-- SDSU -->
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-title">Graduate Research & Teaching Assistant</h3>
+              <div class="experience-meta">South Dakota State University • Brookings, SD</div>
+            </div>
+            <div class="experience-dates">Aug 2024 — May 2025</div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Supported multimodal ML research by curating and validating ground-truth data for <strong>VLM datasets</strong> to improve cross-modal alignment quality.</li>
+            <li>Assisted grading and evaluation for programming and operating systems courses, providing structured feedback to <strong>30+</strong> students per semester.</li>
+            <li>Reinforced best practices in debugging, code quality, and structured problem solving.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>ML data curation</span><span>VLM</span><span>Teaching</span>
+          </div>
+        </article>
+
+        <!-- Kabbee -->
+        <article class="experience-card">
+          <div class="experience-top">
+            <div>
+              <h3 class="experience-title">Software Engineer</h3>
+              <div class="experience-meta">Kabbee Enterprise • Remote</div>
+            </div>
+            <div class="experience-dates">Jun 2021 — Feb 2023</div>
+          </div>
+          <ul class="experience-bullets">
+            <li>Built and maintained a cross-platform <strong>Flutter</strong> video streaming app across Android, iOS, desktop, and smart TV using a unified codebase.</li>
+            <li>Integrated <strong>Stripe Payment API</strong> across frontend/backend and authored technical documentation for onboarding.</li>
+            <li>Led and mentored a team of <strong>6 interns</strong> in Agile and modern web development practices.</li>
+          </ul>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>Stripe API</span><span>Agile</span><span>Leadership</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Projects Section -->
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-label">_featured_projects</div>
+      <h2 class="section-title-large">Selected engineering work with<br /><span class="gradient-text">measurable impact</span></h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">AI/ML</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">AI-Driven PDF PII Redaction System</h3>
+          <p class="project-description">
+            Transformer-based NER + OCR + layout-aware parsing to detect and redact sensitive PII from scanned PDFs,
+            with structured outputs for downstream compliance workflows.
+          </p>
+          <p class="project-impact"><strong>Impact:</strong> 84.5% recall on real-world datasets across 15+ PII categories.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Transformers</span><span>NLP</span><span>NER</span><span>OCR</span>
+          </div>
+
+          <!-- TODO: replace href with your real repo/demo -->
+          <a href="https://github.com/Esrom-Tes/" target="_blank" rel="noopener" class="project-link">
+            <span>View project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Mobile + OCR</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Lewhat Beef Packaging & Tracking System</h3>
+          <p class="project-description">
+            Offline-first Flutter system using Google ML Kit OCR to extract product category + weight from labels,
+            aggregate shipments at truck level, and generate structured Excel reports.
+          </p>
+          <p class="project-impact"><strong>Impact:</strong> Automated recognition for 29 beef cut categories + real-time shipment aggregation.</p>
+          <div class="project-tech">
+            <span>Flutter</span><span>Dart</span><span>Google ML Kit</span><span>Hive</span><span>Excel export</span>
+          </div>
+          <a href="https://github.com/Esrom-Tes/" target="_blank" rel="noopener" class="project-link">
+            <span>View project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Enterprise</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Biometric Identification & Management System</h3>
+          <p class="project-description">
+            C# + SQL Server system integrating fingerprint hardware for secure identity verification,
+            reporting, and audit workflows for high-integrity data management.
+          </p>
+          <p class="project-impact"><strong>Impact:</strong> Delivered as team lead (4) and recognized by the Eritrean Police Department.</p>
+          <div class="project-tech">
+            <span>C#</span><span>SQL Server</span><span>Security</span><span>Reporting</span><span>Hardware integration</span>
+          </div>
+          <a href="https://github.com/Esrom-Tes/" target="_blank" rel="noopener" class="project-link">
+            <span>View project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Open Source</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3 class="project-title">Localized Python Error Messages (Tigrinya + Persian)</h3>
+          <p class="project-description">
+            gettext-based localization framework to translate Python error messages, improving accessibility
+            for non-English speakers and enabling community-driven translations.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>gettext</span><span>i18n</span><span>Accessibility</span>
+          </div>
+          <a href="https://github.com/Esrom-Tes/" target="_blank" rel="noopener" class="project-link">
+            <span>View project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Fintech</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3 class="project-title">SAJE Forex Automated Trading Application</h3>
+          <p class="project-description">
+            API-based live market data retrieval and automated trade execution with moving average indicators
+            and risk management modules.
+          </p>
+          <div class="project-tech">
+            <span>APIs</span><span>Automation</span><span>Indicators</span><span>Risk management</span>
+          </div>
+          <a href="https://github.com/Esrom-Tes/" target="_blank" rel="noopener" class="project-link">
+            <span>View project</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-label">_tech_stack</div>
+      <h2 class="section-title-large">Tools I use to ship<br /><span class="gradient-text">reliable systems</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 95%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">C#</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Dart</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frameworks & Platforms</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Flutter</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">.NET</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Power Apps / SPFx</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">AI & ML</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">LLMs / RAG</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">NLP / NER</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">OCR</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 86%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">PyTorch</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 87%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Scikit-learn / Pandas</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 85%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">VLM datasets</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 78%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Cloud & DevOps</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Azure</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 75%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 90%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Firebase</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 72%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Enterprise Systems</h3>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">SharePoint</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 92%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Dataverse</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Power Automate</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Microsoft Graph</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 82%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">Power BI</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 80%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">AvePoint</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 78%"></div></div></div>
+            <div class="skill-item"><span class="skill-name">SQL Server / Databases</span><div class="skill-bar"><div class="skill-fill" style="--skill-width: 88%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="section-label">_get_in_touch</div>
+        <h2 class="section-title-large">Let’s build something<br /><span class="gradient-text">reliable</span></h2>
+
+        <p class="contact-text">
+          I’m open to full-time opportunities in software engineering and applied AI.
+          If you need someone who can ship end-to-end systems—from governance dashboards to AI pipelines—let’s talk.
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:Esrom.Ghebreweldi@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <path d="M22 6l-10 7L2 6"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">Esrom.Ghebreweldi@gmail.com</div>
+            </div>
+          </a>
+
+          
+
+          <a href="https://linkedin.com/in/esrom-tesfabrhan" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">esrom-tesfabrhan</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/EsromG/" target="_blank" rel="noopener" class="contact-card">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="contact-info">
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">EsromG</div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <span class="terminal-cursor">$</span> esrom.ghebreweldi
+        </div>
+        <div class="footer-right">
+          <span>© 2026 Built with modern web tech</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script-v2.js"></script>
 </body>
 </html>
