@@ -110,8 +110,22 @@ window.addEventListener('scroll', () => {
 
   window.requestAnimationFrame(() => {
     const currentScroll = window.pageYOffset;
+    
+    // Nav background
     setNavBackground(currentScroll);
+    
+    // Active nav link
     updateActiveNavLink();
+    
+    // Hero parallax (only if in view)
+    if (currentScroll < window.innerHeight) {
+      const heroContent = document.querySelector('.hero .container');
+      if (heroContent) {
+        heroContent.style.transform = `translateY(${currentScroll * 0.25}px)`;
+        heroContent.style.opacity = String(1 - (currentScroll / 900));
+      }
+    }
+    
     ticking = false;
   });
 });
@@ -190,15 +204,6 @@ if (terminalLine) {
 // =======================
 // Parallax effect for hero section (light & safe)
 // =======================
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const heroContent = document.querySelector('.hero .container');
-
-  if (heroContent && scrolled < window.innerHeight) {
-    heroContent.style.transform = `translateY(${scrolled * 0.25}px)`;
-    heroContent.style.opacity = String(1 - (scrolled / 900));
-  }
-});
 
 // =======================
 // Copy email on Ctrl/Cmd + Click
